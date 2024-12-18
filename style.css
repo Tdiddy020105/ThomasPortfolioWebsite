@@ -1,222 +1,215 @@
 body {
-    background-image: url('https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    margin: 0;
-    text-align: center;
-    cursor: url('images/cupcake.png'), auto; /* Cupcake cursor */
-  }
-  
-  .marquee {
-    background-color: #ff69b4;
-    color: #fff;
-    padding: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  header {
-    background-color: rgba(255, 69, 0, 0.8);
-    color: white;
-    padding: 20px;
-    text-shadow: 3px 3px #00ff00;
-  }
-  
-  header h1 {
-    font-family: "Comic Sans MS", "Comic Sans", cursive; /* Apply Comic Sans */
-    font-size: 3.5rem;
-    color: #fff;
-    text-shadow: 3px 3px #00ff00;
-    margin: 0;
-  }
-  
-  
-  .section {
-    padding: 20px;
-    margin: 20px auto;
-    width: 85%;
-    border: 4px dashed #ff69b4;
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 8px 8px 30px rgba(255, 255, 255, 0.5);
-  }
-  
-  .section h2 {
-    color: #ff69b4;
-    font-size: 2.5rem;
-  }
-  
-  .frog-wizard {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 100px;
-  }
-  
-  .fun-facts-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .fun-fact-card {
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-  }
-  
-  .fun-fact-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-  }
-  
-  .fun-fact-card:hover .fun-fact-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .fun-fact-front, .fun-fact-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #000;
-    border: 2px solid #ff69b4;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    font-size: 1.2rem;
-  }
-  
-  .fun-fact-back {
-    background-color: #ff69b4;
-    color: #fff;
-    transform: rotateY(180deg);
-  }
-  
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  /* Project Grid Styling */
-.project {
-    padding: 10px;
-    border: 3px dotted #00ff00;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #fff; /* White text for better readability */
-    text-decoration: none; /* Remove the default link underline */
-    box-shadow: 5px 5px 15px rgba(0, 255, 0, 0.5);
-    cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .project h3 {
-    color: #ff69b4; /* Bright pink for headings */
-    font-size: 1.5rem;
-    margin: 10px 0;
-  }
-  
-  .project p {
-    color: #fff; /* White for descriptions */
-    font-size: 1rem;
-  }
-  
-  .project:hover {
-    transform: scale(1.05);
-  }
-  
-  .project:hover h3 {
-    color: #00ff00; /* Change heading to bright green on hover */
-  }
-  
-  
-  .project img {
-    width: 100%;
-    border-radius: 15px;
-  }
-  
-  footer {
-    background-color: rgba(255, 69, 0, 0.8);
-    padding: 15px;
-    margin-top: 20px;
-    font-size: 1.2rem;
-  }
+  background-image: url('https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  cursor: url('images/cupcake.png'), auto; /* Cupcake cursor */
+}
 
-  /* Retro Popup Styling */
+.marquee {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header {
+  background-color: rgba(255, 69, 0, 0.8);
+  color: white;
+  padding: 20px;
+  text-shadow: 3px 3px #00ff00;
+}
+
+header h1 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 3px 3px #00ff00;
+  margin: 0;
+}
+
+.section {
+  padding: 20px;
+  margin: 20px auto;
+  width: 85%;
+  border: 4px dashed #ff69b4;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 8px 8px 30px rgba(255, 255, 255, 0.5);
+}
+
+.section h2 {
+  color: #ff69b4;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  width: 100%;
+  border: 3px solid #00ff00; /* Bright green border */
+  margin: 20px auto;
+  text-align: left;
+  background-color: #000; /* Black background */
+  color: #00ff00; /* Neon green text */
+  font-family: "Courier New", Courier, monospace; /* Retro font */
+  font-size: 1rem;
+}
+
+.project-list th, .project-list td {
+  padding: 10px;
+  border: 1px solid #ff69b4; /* Bright pink cell borders */
+}
+
+.project-list th {
+  background-color: #ff69b4; /* Bright pink background */
+  color: #fff; /* White text */
+  text-transform: uppercase;
+}
+
+.project-list tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* Light overlay for contrast */
+}
+
+.project-list tr:hover {
+  background-color: #ff69b4; /* Highlight row on hover */
+  color: #fff;
+}
+
+.project-list a {
+  color: #00ffff; /* Cyan links */
+  text-decoration: underline;
+}
+
+.project-list a:hover {
+  color: #ff69b4; /* Bright pink on hover */
+}
+
+.frog-wizard {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+}
+
+.fun-facts-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fun-fact-card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.fun-fact-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.fun-fact-card:hover .fun-fact-inner {
+  transform: rotateY(180deg);
+}
+
+.fun-fact-front, .fun-fact-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+}
+
+.fun-fact-back {
+  background-color: #ff69b4;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+footer {
+  background-color: rgba(255, 69, 0, 0.8);
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
 .popup {
-    display: none; /* Initially hidden */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    background-color: #fffbcc; /* Light yellow background */
-    border: 5px solid #ff0000; /* Bold red border */
-    box-shadow: 10px 10px 0px #000; /* Sharp retro drop shadow */
-    text-align: center;
-    z-index: 10000;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    animation: shake 0.3s infinite; /* Shake animation for attention */
-  }
-  
-  /* Popup Header */
-  .popup h3 {
-    margin: 0;
-    background-color: #ff0000;
-    color: #fff;
-    padding: 10px;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    border-bottom: 3px solid #000;
-  }
-  
-  /* Popup Content */
-  .popup p {
-    margin: 20px 10px;
-    color: #000;
-    font-size: 1.1rem;
-    line-height: 1.4;
-  }
-  
-  /* Popup Button */
-  .popup button {
-    background-color: #00ff00;
-    color: #000;
-    font-size: 1rem;
-    padding: 10px 20px;
-    margin: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: 3px solid #008000;
-    cursor: pointer;
-    box-shadow: 5px 5px 0px #000;
-  }
-  
-  .popup button:hover {
-    background-color: #ffff00; /* Yellow hover effect */
-    color: #ff0000;
-    border-color: #000;
-  }
-  
-  /* Shake Animation */
-  @keyframes shake {
-    0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
-    25% { transform: translate(-49%, -51%) rotate(1deg); }
-    50% { transform: translate(-51%, -49%) rotate(-1deg); }
-    75% { transform: translate(-50%, -50%) rotate(1deg); }
-  }
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background-color: #fffbcc;
+  border: 5px solid #ff0000;
+  box-shadow: 10px 10px 0px #000;
+  text-align: center;
+  z-index: 10000;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  animation: shake 0.3s infinite;
+}
+
+.popup h3 {
+  margin: 0;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+}
+
+.popup p {
+  margin: 20px 10px;
+  color: #000;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.popup button {
+  background-color: #00ff00;
+  color: #000;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 3px solid #008000;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px #000;
+}
+
+.popup button:hover {
+  background-color: #ffff00;
+  color: #ff0000;
+  border-color: #000;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
+  25% { transform: translate(-49%, -51%) rotate(1deg); }
+  50% { transform: translate(-51%, -49%) rotate(-1deg); }
+  75% { transform: translate(-50%, -50%) rotate(1deg); }
+}
+
   
   
