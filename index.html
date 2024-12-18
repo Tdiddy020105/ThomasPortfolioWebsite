@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thomas Dielesen's Cool 2000s Website</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="marquee">
@@ -53,30 +53,39 @@
   <section class="section fun-facts">
     <h2>Fun Facts About Me</h2>
     <div class="fun-facts-container">
-      <div class="fun-fact-card">
-        Fun Fact 1<br>I’m a professional powerlifter at KNKF.
+      <div class="fun-fact-card" onclick="revealFunFact(this, 'I’m a professional powerlifter at KNKF.')">
+        Fun Fact 1<br>Click for more!
       </div>
-      <div class="fun-fact-card">
-        Fun Fact 2<br>I love rock music!
+      <div class="fun-fact-card" onclick="revealFunFact(this, 'I love rock music!')">
+        Fun Fact 2<br>Click for more!
       </div>
-      <div class="fun-fact-card">
-        Fun Fact 3<br>I’m always tinkering with gadgets and technology.
+      <div class="fun-fact-card" onclick="revealFunFact(this, 'I’m always tinkering with gadgets and technology.')">
+        Fun Fact 3<br>Click for more!
       </div>
     </div>
-  </section>
+  </section>  
+  
 
   <footer>
     <p>&copy; 2024 Thomas Dielesen. Made with ❤️!</p>
   </footer>
 
-  <div id="hireMePopup" class="popup">
+  <div id="funFactPopup" class="popup fun-fact-popup">
+    <div class="popup-content">
+      <h3>Fun Fact</h3>
+      <p id="funFactText"></p>
+      <button onclick="closeFunFactPopup()">Close</button>
+    </div>
+  </div>
+  
+  <div id="hireMePopup" class="popup hire-me-popup">
     <h3>🚀 Hire Me!</h3>
     <p>You've found a top designer! Click below to work with me now!</p>
     <button onclick="closeHireMePopup()">Close</button>
   </div>
+  
 
   <img class="frog-wizard" src="https://media.giphy.com/media/IvKoEtvvzMfMRP3Eqc/giphy.gif" alt="Frog Wizard">
-
 </body>
 </html>
 

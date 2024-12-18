@@ -116,12 +116,18 @@ header h1 {
   font-family: "Courier New", Courier, monospace;
   padding: 15px;
   box-shadow: 4px 4px 0px #000;
+  cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .fun-fact-card:hover {
   transform: scale(1.05);
   box-shadow: 6px 6px 0px #ff69b4;
+}
+
+.fun-fact-card:active {
+  background-color: #00ff00;
+  color: #000;
 }
 
 .fun-fact-card h3 {
@@ -236,3 +242,6 @@ footer {
 .yeezy-sneaker:hover {
   transform: scale(1.2);
 }
+
+
+
