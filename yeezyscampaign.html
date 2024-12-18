@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeezys Campaign</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Yeezys Campaign for Old People</h1>
+    <nav>
+      <a href="index.html">⬅ Back to Home</a>
+    </nav>
+  </header>
+
+  <section class="section project-content">
+    <h2>Overview</h2>
+    <p>This campaign markets Yeezys as the ultimate footwear for style and comfort, targeting the senior demographic.</p>
+    <img src="images/yeezys.jpg" alt="Yeezys Campaign" style="width: 100%; margin: 20px 0;">
+    <h2>Details</h2>
+    <p>
+      By blending sleek design with unmatched comfort, Yeezys are reimagined as the perfect choice for those in their golden years.
+      With a focus on ergonomic support and timeless aesthetics, this campaign aims to bridge the generation gap in style.
+    </p>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="images/yeezy1.jpg" alt="Gallery Image 1" style="width: 30%; margin: 10px;">
+      <img src="images/yeezy2.jpg" alt="Gallery Image 2" style="width: 30%; margin: 10px;">
+      <img src="images/yeezy3.jpg" alt="Gallery Image 3" style="width: 30%; margin: 10px;">
+    </div>
+  </section>
+
+  <div id="yeezySneaker" class="yeezy-sneaker">👟</div>
+
+  <footer>
+    <p>&copy; 2024 Thomas Dielesen. Made with ❤️!</p>
+  </footer>
+
+  <script>
+    // Bouncing Yeezy Shoe Effect
+    const yeezySneaker = document.getElementById('yeezySneaker');
+
+    let x = 0;
+    let y = 0;
+    let dx = 3;
+    let dy = 2;
+
+    function updatePosition() {
+      const maxWidth = window.innerWidth - yeezySneaker.offsetWidth;
+      const maxHeight = window.innerHeight - yeezySneaker.offsetHeight;
+
+      x += dx;
+      y += dy;
+
+      if (x <= 0 || x >= maxWidth) dx *= -1;
+      if (y <= 0 || y >= maxHeight) dy *= -1;
+
+      yeezySneaker.style.left = `${x}px`;
+      yeezySneaker.style.top = `${y}px`;
+    }
+
+    setInterval(updatePosition, 20);
+
+    yeezySneaker.addEventListener('click', () => {
+      alert('You clicked the Yeezy! Stay stylish!');
+    });
+  </script>
+
+  <style>
+    .yeezy-sneaker {
+      position: absolute;
+      font-size: 2rem;
+      background-color: #ff69b4;
+      color: #000;
+      padding: 10px;
+      border: 2px solid #00ff00;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 4px 4px 0px #000;
+      transition: transform 0.2s ease;
+    }
+
+    .yeezy-sneaker:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</body>
+</html>
+

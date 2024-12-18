@@ -27,5 +27,27 @@ function closeProjectPopup() {
   popup.style.display = 'none';
 }
 
+// Functionality for flying trash icon
+const flyingTrash = document.getElementById('flyingTrash');
+
+function moveTrashRandomly() {
+  const x = Math.floor(Math.random() * (window.innerWidth - 50));
+  const y = Math.floor(Math.random() * (window.innerHeight - 50));
+  flyingTrash.style.left = `${x}px`;
+  flyingTrash.style.top = `${y}px`;
+}
+
+function showCleanUpMessage() {
+  alert('Thanks for keeping the planet clean!');
+  moveTrashRandomly();
+}
+
+flyingTrash.addEventListener('click', showCleanUpMessage);
+
+setInterval(moveTrashRandomly, 15000);
+moveTrashRandomly(); // Initial placement
+
+
+
 
 
