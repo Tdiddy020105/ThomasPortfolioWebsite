@@ -7,7 +7,6 @@ body {
   color: #fff;
   margin: 0;
   text-align: center;
-  cursor: url('images/cupcake.png'), auto; /* Cupcake cursor */
 }
 
 .marquee {
@@ -53,42 +52,42 @@ header h1 {
 
 .project-list {
   width: 100%;
-  border: 3px solid #00ff00; /* Bright green border */
+  border: 3px solid #00ff00;
   margin: 20px auto;
   text-align: left;
-  background-color: #000; /* Black background */
-  color: #00ff00; /* Neon green text */
-  font-family: "Courier New", Courier, monospace; /* Retro font */
+  background-color: #000;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
 }
 
 .project-list th, .project-list td {
   padding: 10px;
-  border: 1px solid #ff69b4; /* Bright pink cell borders */
+  border: 1px solid #ff69b4;
 }
 
 .project-list th {
-  background-color: #ff69b4; /* Bright pink background */
-  color: #fff; /* White text */
+  background-color: #ff69b4;
+  color: #fff;
   text-transform: uppercase;
 }
 
 .project-list tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.1); /* Light overlay for contrast */
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .project-list tr:hover {
-  background-color: #ff69b4; /* Highlight row on hover */
+  background-color: #ff69b4;
   color: #fff;
 }
 
 .project-list a {
-  color: #00ffff; /* Cyan links */
+  color: #00ffff;
   text-decoration: underline;
 }
 
 .project-list a:hover {
-  color: #ff69b4; /* Bright pink on hover */
+  color: #ff69b4;
 }
 
 .frog-wizard {
@@ -103,20 +102,20 @@ header h1 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
   padding: 20px;
-  background-color: #000; /* Black background */
-  border: 3px solid #00ff00; /* Neon green border */
+  background-color: #000;
+  border: 3px solid #00ff00;
   margin: 20px auto;
   width: 90%;
 }
 
 .fun-fact-card {
-  background-color: #ff69b4; /* Bright pink */
-  color: #fff; /* White text */
-  border: 3px solid #00ff00; /* Neon green border */
+  background-color: #ff69b4;
+  color: #fff;
+  border: 3px solid #00ff00;
   text-align: center;
-  font-family: "Courier New", Courier, monospace; /* Retro font */
+  font-family: "Courier New", Courier, monospace;
   padding: 15px;
-  box-shadow: 4px 4px 0px #000; /* Retro blocky shadow */
+  box-shadow: 4px 4px 0px #000;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -128,16 +127,14 @@ header h1 {
 .fun-fact-card h3 {
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #00ffff; /* Cyan heading */
+  color: #00ffff;
 }
 
 .fun-fact-card p {
   margin: 0;
   font-size: 1rem;
-  color: #fff; /* White text */
+  color: #fff;
 }
-
-
 
 footer {
   background-color: rgba(255, 69, 0, 0.8);
@@ -152,14 +149,13 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 350px;
+  width: 300px;
   background-color: #fffbcc;
   border: 5px solid #ff0000;
   box-shadow: 10px 10px 0px #000;
   text-align: center;
-  z-index: 10000;
+  z-index: 1000;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
-  animation: shake 0.3s infinite;
 }
 
 .popup h3 {
@@ -175,14 +171,13 @@ footer {
 .popup p {
   margin: 20px 10px;
   color: #000;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
 .popup button {
   background-color: #00ff00;
   color: #000;
-  font-size: 1rem;
   padding: 10px 20px;
   margin: 10px;
   font-weight: bold;
@@ -197,13 +192,3 @@ footer {
   color: #ff0000;
   border-color: #000;
 }
-
-@keyframes shake {
-  0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
-  25% { transform: translate(-49%, -51%) rotate(1deg); }
-  50% { transform: translate(-51%, -49%) rotate(-1deg); }
-  75% { transform: translate(-50%, -50%) rotate(1deg); }
-}
-
-  
-  
