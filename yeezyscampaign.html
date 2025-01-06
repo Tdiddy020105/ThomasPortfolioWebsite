@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeezys Campaign</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Yeezys Campaign for Old People</h1>
+    <nav>
+      <a href="index.html">⬅ Back to Home</a>
+    </nav>
+  </header>
+
+  <section class="section project-content">
+    <h2>Project Overview</h2>
+    <p>
+      During my Advanced Media Design semester I undertook a small project about making a new campaign for a brand of my choosing.
+      The goal of this project was to make Yeezys appealing to people aged 65 and older. 
+      These shoes are primarily popular among young people, but we aim to make them more accessible to the older generation.
+      After some research we had the idea to make brochures which would go in magazines that people of that age would read.
+    </p>
+
+    <h2>My Role and Responsibilities</h2>
+    <ul>
+      <li><strong>User Research:</strong> Interviewed people over the age of 65 and asked them about their shoe shopping habbits.</li>
+      <li><strong>Desiging:</strong> Designed multiple posters that vary in boldness.</li>
+      <li><strong>Testing:</strong> Showcased my posters to my target audience and made them choose their preference.</li>
+    </ul>
+
+    <h2>Prototyping and Outcomes</h2>
+    <div class="gallery">
+      <figure>
+        <img src="images/yeezygrandmascooterposter.png" alt="poster1" style="width: 48%; margin: 1%;">
+        <figcaption>Grandma on scooter poster</figcaption>
+      </figure>
+      <figure>
+        <img src="images/Poster2.png" alt="poster2" style="width: 48%; margin: 1%;">
+        <figcaption>Grandma with drip poster</figcaption>
+      </figure>
+    </div>
+    <div class="gallery">
+      <figure>
+        <img src="images/Poster3.png" alt="poster3" style="width: 48%; margin: 1%;">
+        <figcaption>Grandma skydiving poster</figcaption>
+      </figure>
+      <figure>
+        <img src="images/Poster4.png" alt="poster4" style="width: 48%; margin: 1%;">
+        <figcaption>Grandma lifting poster</figcaption>
+      </figure>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <video controls style="width: 48%; margin: 1%;">
+          <source src="images/miocreate_faceswap.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Totally official Yeezy commercial</figcaption>
+      </figure>
+      </div>
+
+    <h2>Reflection</h2>
+    <p>
+      The interviewees mentioned that they didn’t find the QR code useful, as they rarely use it themselves. 
+      The humorous posters were generally well-received, though some felt that a few were a bit too extreme in tone or content. 
+      This provides us with valuable insights into finding the right balance between creativity and accessibility for this target audience.
+      During this project I learned to push the boundaries of design and make unconventional products.
+    </p>
+  </section>
+
+  <div id="yeezySneaker" class="yeezy-sneaker">👟</div>
+
+  <footer>
+    <p>&copy; 2025 Thomas Dielesen. Made by my creative mind!</p>
+    <p>
+      <a href="https://www.linkedin.com/in/thomas-dielesen-05b257234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+      <a href="https://www.instagram.com/thomasdielesen" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </p>
+  </footer>
+
+  <script>
+    // Bouncing Yeezy Shoe Effect
+    const yeezySneaker = document.getElementById('yeezySneaker');
+
+    let x = 0;
+    let y = 0;
+    let dx = 3;
+    let dy = 2;
+
+    function updatePosition() {
+      const maxWidth = window.innerWidth - yeezySneaker.offsetWidth;
+      const maxHeight = window.innerHeight - yeezySneaker.offsetHeight;
+
+      x += dx;
+      y += dy;
+
+      if (x <= 0 || x >= maxWidth) dx *= -1;
+      if (y <= 0 || y >= maxHeight) dy *= -1;
+
+      yeezySneaker.style.left = `${x}px`;
+      yeezySneaker.style.top = `${y}px`;
+    }
+
+    setInterval(updatePosition, 20);
+
+    yeezySneaker.addEventListener('click', () => {
+      alert('You clicked the Yeezy! Stay stylish!');
+    });
+  </script>
+
+  <style>
+    .yeezy-sneaker {
+      position: absolute;
+      font-size: 2rem;
+      background-color: #ff69b4;
+      color: #000;
+      padding: 10px;
+      border: 2px solid #00ff00;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 4px 4px 0px #000;
+      transition: transform 0.2s ease;
+    }
+
+    .yeezy-sneaker:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</body>
+</html>
+
