@@ -1,1 +1,3 @@
 /videos
+# Local Netlify folder
+.netlify
