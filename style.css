@@ -293,3 +293,108 @@ footer {
 
 
 
+/* General Mobile Adjustments */
+body {
+  font-size: 16px; /* Ensure readability on smaller screens */
+}
+
+header h1 {
+  font-size: 2.5rem; /* Adjust header size for smaller devices */
+}
+
+.section {
+  padding: 15px;
+  width: 90%; /* Fit better on small screens */
+}
+
+.project-list {
+  font-size: 0.9rem; /* Slightly smaller font for tables */
+}
+
+footer {
+  font-size: 1rem; /* Adjust footer font size */
+  padding: 10px;
+}
+
+/* Foto Gallery Adjustments */
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dynamic layout */
+  gap: 10px; /* Adjust spacing */
+}
+
+.photo-container img {
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Fun Facts Cards */
+.fun-facts-container {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+  gap: 10px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For Tablets (768px and smaller) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .marquee {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .project-list th, .project-list td {
+    padding: 8px; /* Adjust padding for smaller tables */
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* For Phones (480px and smaller) */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* Single-column layout */
+  }
+
+  .photo-container {
+    margin-bottom: 10px; /* Add spacing between images */
+  }
+
+  .fun-facts-container {
+    grid-template-columns: 1fr; /* Single column for fun facts */
+  }
+
+  .marquee {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  .frog-wizard {
+    width: 60px; /* Reduce size further */
+  }
+
+  .popup {
+    width: 90%; /* Make popups fit smaller screens */
+  }
+
+  .yeezy-game {
+    height: 50vh; /* Reduce height for smaller screens */
+  }
+
+  #secretButton {
+    bottom: 20px; /* Adjust position for smaller screens */
+    left: 20px;
+  }
+}
+
+
+
+
+
